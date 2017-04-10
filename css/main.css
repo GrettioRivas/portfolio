@@ -1,0 +1,250 @@
+
+/********** Fonts **********/
+
+@font-face {
+    font-family: 'Aller Regular';
+    src: url('fonts/aller_rg-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik Regular';
+    src: url('fonts/rubik-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: 'Aller Regular', Arial;
+	color: #202020;
+}
+
+/********** Fix **********/
+
+html, body {
+	overflow-x: hidden!important;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/********** Header **********/
+
+header {
+	height: 350px;
+	background:url('../img/italy.jpg') center top fixed no-repeat;
+}
+
+h1 {
+	font-size: 5.0em;
+	margin: 0;
+	text-align: center;
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-shadow: 4px 4px 9px #AAA;
+}
+
+nav ul {
+	text-align: center;
+	padding: 0px;
+	background: linear-gradient(90deg, transparent, #9B9999, transparent);
+	margin-top: 220px;
+}
+
+nav li {
+	font-size: 1.7em;
+	list-style: none;
+	display: inline-block;
+	margin: 10px 10px;
+}
+
+nav a:link {
+	color: #000;
+	transition: font-size .4s ease;
+}
+
+nav a:hover {
+	color: #000;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+nav a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+/********** Middle Content **********/
+
+body {
+	background: linear-gradient(#340000 35%, #140000, #000);
+}
+
+#profile {
+	margin: 10% auto;
+	padding-top: 10%;
+	height: 150px;
+	width: 60%;
+	background-color: #FFF;
+}
+
+.Me {
+	background: radial-gradient(#9B9999, #797777);
+	border: solid #E00000 1px;
+	padding: 10%;
+	margin-top: 30px;
+	height: 400px;
+}
+
+.Me h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.Me p {
+	padding-top: 10%;
+	font-size: 0.7em;
+}
+
+#Resume {
+	background: radial-gradient(#9B9999, #797777);
+	height: 90%;
+	margin-top: 30px;
+	padding: 5% 5%;
+	font-size: 1em;
+	border: solid #E00000 1px;
+}
+
+#Resume h2 {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#Resume h3 {
+	font-size: 1.9em;
+}
+
+#Resume h4 {
+	font-size: 1.4em;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#Resume h5 {
+	font-size: 1.3em;
+	margin-bottom: 2px;
+}
+
+#Portfolio {
+	background: radial-gradient(#9B9999, #797777);
+	height: 100%;
+	margin-top: 30px;
+}
+
+#Portfolio h2 {
+	width: 20%;
+	margin: 0 auto;
+	padding: 2%;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#Portfolio ul {
+	width: 90%;
+	margin: 10px auto;
+}
+
+#Portfolio ul li {
+	display: inline;
+	list-style: none;
+}
+
+#Portfolio img {
+	height: 20%;
+	width: 30%;
+}
+
+/********** Footer **********/
+
+footer {
+	margin-top: 20px;
+	background: radial-gradient(#9B9999, #797777);
+}
+
+/********** Responsive **********/
+
+@media screen and (min-width: 480px) {
+
+
+	.Me {
+		height: 480px;
+	}
+
+	.Me h2 {
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+
+	.Me p {
+		font-size: 0.8em;
+	}
+
+	}
+	@media screen and (max-width: 659px) {
+		.tabs-wrap {
+			display: none;
+		}
+}
+
+@media screen and (min-width: 660px) {
+
+	.mobile {
+		display: none;
+	}
+
+	#profile {
+		width: 30%;
+		height: 200px;
+	}
+
+	button {
+		width: 120px;
+		font-size: 1.7em;
+		background: linear-gradient(#c0c0c0, #797777);
+	}
+
+	.Me {
+		height: 650px;
+	}
+
+	.Me h2 {
+		font-size: 2em;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+
+	.Me p {
+		font-size: 1.2em;
+	}
+
+	.tabs-wrap {
+		display: block;
+	}
+
+	.col-sm-8 {
+		background: radial-gradient(#9B9999, #797777);
+	}
+
+	 #About, #Portfolio, #Resume, #Skills {
+		background: none;
+		border: none;
+	}
+
+}
