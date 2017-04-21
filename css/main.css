@@ -1,4 +1,3 @@
-
 /********** Fonts **********/
 
 @font-face {
@@ -16,7 +15,7 @@
 }
 
 body {
-	font-family: 'Aller Regular', Arial;
+	font-family: 'Rubik Regular', Arial;
 	color: #202020;
 }
 
@@ -41,6 +40,7 @@ header {
 }
 
 h1 {
+	font-family: 'Aller Regular', Arial;
 	font-size: 5.0em;
 	margin: 0;
 	text-align: center;
@@ -83,7 +83,7 @@ nav a:visited {
 /********** Middle Content **********/
 
 body {
-	background: linear-gradient(#340000 35%, #140000, #000);
+	background: linear-gradient(#000056 35%, #140000, #222234);
 }
 
 #profile {
@@ -91,18 +91,19 @@ body {
 	padding-top: 10%;
 	height: 150px;
 	width: 60%;
-	background-color: #FFF;
+	background: url('../img/italy.jpg');
 }
 
 .Me {
 	background: radial-gradient(#9B9999, #797777);
-	border: solid #E00000 1px;
+	border: solid #0000E0 1px;
 	padding: 10%;
 	margin-top: 30px;
 	height: 400px;
 }
 
 .Me h2 {
+	font-family: 'Aller Regular', Arial;
 	font-size: 1.5em;
 	font-weight: bold;
 	text-decoration: underline;
@@ -118,28 +119,17 @@ body {
 	height: 90%;
 	margin-top: 30px;
 	padding: 5% 5%;
-	font-size: 1em;
-	border: solid #E00000 1px;
+	border: solid #0000E0 1px;
+}
+
+#Resume p {
+	font-size: 1.2em;
 }
 
 #Resume h2 {
+	font-family: 'Aller Regular', Arial;
 	font-weight: bold;
 	text-decoration: underline;
-}
-
-#Resume h3 {
-	font-size: 1.9em;
-}
-
-#Resume h4 {
-	font-size: 1.4em;
-	font-weight: bold;
-	text-decoration: underline;
-}
-
-#Resume h5 {
-	font-size: 1.3em;
-	margin-bottom: 2px;
 }
 
 #Portfolio {
@@ -169,6 +159,13 @@ body {
 #Portfolio img {
 	height: 20%;
 	width: 30%;
+	border: 2.5px #000066 solid;
+	box-shadow: 5px 5px 3px #000;
+}
+
+#Portfolio img:hover {
+	box-shadow: 9px 9px 3px #000;
+	transition: .4s ease;
 }
 
 /********** Footer **********/
@@ -178,10 +175,29 @@ footer {
 	background: radial-gradient(#9B9999, #797777);
 }
 
+footer ul {
+	list-style: none;
+	padding: 0px;
+	text-align: center;
+}
+
+footer li {
+	display: inline-block;
+	padding: 3px 30px;
+}
+
+i {
+	color: #000056;
+	margin-bottom: 10px;
+}
+
+i:hover {
+	color: #222234;
+}
+
 /********** Responsive **********/
 
 @media screen and (min-width: 480px) {
-
 
 	.Me {
 		height: 480px;
@@ -197,10 +213,19 @@ footer {
 	}
 
 	}
-	@media screen and (max-width: 659px) {
-		.tabs-wrap {
-			display: none;
-		}
+@media screen and (max-width: 659px) {
+
+	.tabs-wrap {
+		display: none;
+	}
+
+	#Resume h2 {
+		font-size: 1.5em;
+	}
+
+	#Resume p {
+		font-size: .7em;
+	}
 }
 
 @media screen and (min-width: 660px) {
@@ -210,41 +235,90 @@ footer {
 	}
 
 	#profile {
-		width: 30%;
+		width: 33%;
 		height: 200px;
 	}
 
-	button {
-		width: 120px;
-		font-size: 1.7em;
-		background: linear-gradient(#c0c0c0, #797777);
+	#About, #Portfolio, #Resume, #Skills {
+		background: none;
+		border: none;
 	}
+
+	h2 {
+		font-family: 'Aller Regular', Arial;
+		font-size: 2.6em;
+		font-weight: bold;
+		text-decoration: underline;
+		text-shadow: 3px 3px 3px #666;
+	}
+
+	#About h2 {
+		font-size: 1.8em;
+	}
+
+	#About, #Skills p {
+		margin: 30px 15% 70px 15%;
+		font-size: 20px;
+	}
+
+	#Skills, #About, #Portfolio {
+		padding-top: 40px;
+
+	}
+
+	#Skills {
+		height: 550px;
+		padding-top: 60px;
+	}
+
+	#Portfolio {
+		height: 500px;
+	}
+
+	#Portfolio ul {
+		margin: 10px auto;
+		padding: 0px;
+	}
+
+	#Portfolio img {
+		height: 250px;
+		width: 33%;
+		margin-bottom: 20px;
+	}
+
+	.tab {
+		margin: 0 -15px;
+	}
+
+	button {
+		font-family: 'Aller Regular', Arial;
+		width: 25%;
+		float: left;
+		color: #c0c0c0;
+		font-size: 1.7em;
+		background: linear-gradient(#000034 35%, #140000, #000);
+		border: 1.3px #000066 solid;
+		margin: 0px;
+	}
+
+	.tabcontent h2 {
+		font-weight: bold;
+		text-decoration: underline;
+		padding: 20px 0;
+		text-align: center;
+	}
+
 
 	.Me {
 		height: 650px;
-	}
-
-	.Me h2 {
-		font-size: 2em;
-		font-weight: bold;
-		text-decoration: underline;
-	}
-
-	.Me p {
-		font-size: 1.2em;
 	}
 
 	.tabs-wrap {
 		display: block;
 	}
 
-	.col-sm-8 {
+	.col-sm-10 {
 		background: radial-gradient(#9B9999, #797777);
-	}
-
-	 #About, #Portfolio, #Resume, #Skills {
-		background: none;
-		border: none;
 	}
 
 }
