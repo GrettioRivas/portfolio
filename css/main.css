@@ -240,7 +240,7 @@ i:hover {
 	}
 
 	#Resume p {
-		font-size: .7em;
+		font-size: .8em;
 	}
 
 	.col-xs-3 p {
@@ -257,14 +257,6 @@ i:hover {
 
 	.tabs-wrap {
 		display: none;
-	}
-
-	#Resume h2 {
-		font-size: 1.5em;
-	}
-
-	#Resume p {
-		font-size: .7em;
 	}
 }
 
