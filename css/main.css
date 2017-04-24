@@ -197,22 +197,47 @@ i:hover {
 
 /********** Responsive **********/
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
+
+	nav li {
+		font-size: 1.1em;
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+
+	nav ul {
+		margin-top: 232px;
+	}
+
+	#profile {
+	margin: 10% auto;
+	padding-top: 10%;
+	height: 200px;
+	width: 70%;
+	border-radius: 100%;
+	border:solid #0000E0 3px;
+	background: url('../img/profile.jpg') center no-repeat;
+	}
 
 	.Me {
-		height: 480px;
+		height: 420px;
 	}
 
 	.Me h2 {
-		font-size: 1.5em;
+		font-size: 1.2em;
 		font-weight: bold;
 	}
 
 	.Me p {
-		font-size: 0.8em;
+		font-size: 0.7em;
 	}
 
+	#Resume p {
+		font-size: 1.3em;
 	}
+
+}
+
 @media screen and (max-width: 659px) {
 
 	.tabs-wrap {
