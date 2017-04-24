@@ -201,39 +201,54 @@ i:hover {
 
 	nav li {
 		font-size: 1.1em;
-		margin-right: 20px;
-		margin-left: 20px;
+		margin-right: 5px;
+		margin-left: 5px;
+		font-weight: bold;
 	}
 
 	nav ul {
-		margin-top: 232px;
+		margin-top: 155px;
 	}
 
 	#profile {
 	margin: 10% auto;
 	padding-top: 10%;
 	height: 200px;
-	width: 70%;
+	width: 120%;
 	border-radius: 100%;
 	border:solid #0000E0 3px;
-	background: url('../img/profile.jpg') center no-repeat;
+	background: url('../img/profile.jpg') center-bottom no-repeat;
 	}
 
 	.Me {
-		height: 420px;
+		height: 525px;
 	}
 
 	.Me h2 {
-		font-size: 1.2em;
+		font-size: 1.3em;
 		font-weight: bold;
+		text-align: center;
 	}
 
 	.Me p {
-		font-size: 0.7em;
+		font-size: 0.8em;
+	}
+
+	#Resume h2 {
+		font-size: 1.2em;
+		width: 100px;
 	}
 
 	#Resume p {
-		font-size: 1.3em;
+		font-size: .7em;
+	}
+
+	.col-xs-3 p {
+		width: 80px;
+	}
+
+	footer {
+		font-size: .9em;
 	}
 
 }
